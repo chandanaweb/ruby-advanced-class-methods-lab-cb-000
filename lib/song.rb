@@ -16,9 +16,14 @@ class Song
        @song
   end
 
+  def initialize(name)
+   @name = name
+ end
+
   def self.new_by_name(song)
-      @name = song
-      self.name
+    @name = song
+    @name
+      
   end
  def self.create_by_name
  end
