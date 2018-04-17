@@ -32,7 +32,7 @@ class Song
   end
   def self.find_or_create_by_name(name)
     existingSong = self.find_by_name(name)
-    if existingSong  
+    if existingSong
       existingSong
     else
       song = self.create_by_name(name)
